@@ -19,5 +19,11 @@ public class Apple extends Actor
         if (Greenfoot.isKeyDown("space")){
             setLocation(getX(),getY() + 3);
         }
+        
+        MyWorld world = (MyWorld) getWorld();
+        if (getY() >= world.getHeight()){
+            world.gameOver();
+            world.removeObject(this);
+        }
     }
 }
