@@ -10,6 +10,8 @@ public class MyWorld extends World
 {
     public int score = 0;
     Label scoreLabel;
+    Label gameOverLabel;
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -19,6 +21,9 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false);
         
+        GreenfootImage bgImage = new GreenfootImage("images/backgroundColorDesert.png");
+        bgImage.scale(400, 400);
+        setBackground(bgImage);
         
         Elephant elephant = new Elephant ();
         addObject(elephant, 0, 300);
