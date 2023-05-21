@@ -16,7 +16,7 @@ public class Apple extends Actor
     {
         // Add your action code here.
         setLocation(getX(), getY() + 1);
-        if (Greenfoot.isKeyDown("space")){
+        if (Greenfoot.isKeyDown("s")){
             setLocation(getX(),getY() + 3);
         }
         
