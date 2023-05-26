@@ -35,3 +35,4 @@ public class TitleScreen extends World
         label.getImage();
     }
 }
+//Maybe you can add a background in the title screen.
