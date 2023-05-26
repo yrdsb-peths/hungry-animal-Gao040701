@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * The world which the elephant eats the apple
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Angela 
+ * @version 05/26/2023
  */
 public class MyWorld extends World
 {
@@ -12,10 +12,7 @@ public class MyWorld extends World
     Label scoreLabel;
     Label gameOverLabel;
     int level = 1;
-    /**
-     * Constructor for objects of class MyWorld.
-     * 
-     */
+    
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
