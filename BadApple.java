@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Apple 
+ * Bad apple
+ * if the elephant eats the bad apple, the game is over 
  * 
  * @author Angela 
  * @version 05/26/2023
@@ -26,7 +27,7 @@ public class BadApple extends Actor
     }
     
     /**
-     * set the speed of the apple dropping
+     * set the speed of the bad apple dropping
      */
     public void setSpeed(int spd){
         speed = spd;
