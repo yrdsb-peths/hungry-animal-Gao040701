@@ -1,5 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+/**
+ * The titlescreen
+ * 
+ * @author Angela 
+ * @version 05/26/2023
+ */
 public class TitleScreen extends World
 {
     Label titleLabel = new Label ("Hungry Elephant",60);

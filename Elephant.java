@@ -28,6 +28,9 @@ public class Elephant extends Actor
     }
     
     private int imageIndex = 0;
+    /**
+     * animate the elephant using arrays
+     */
     public void animateElephant(){
         if (animationTimer.millisElapsed() < 200){
             return;
@@ -43,7 +46,6 @@ public class Elephant extends Actor
     }
     public void act()
     {
-        // Add your action code here.
         if (Greenfoot.isKeyDown("right")){
             facingRight = true;
             move(5);
@@ -57,6 +59,9 @@ public class Elephant extends Actor
         animateElephant();
     }
     
+    /**
+     * when touches an apple, remove it and create a new apple, increase score and play a sound
+     */
     public void eat(){
         if (isTouching(Apple.class)){
             removeTouching(Apple.class);

@@ -31,6 +31,10 @@ public class MyWorld extends World
         createApple();
         
     }
+    
+    /**
+     * increase score by one and increase level for every 5 scores earned 
+     */
     public void IncreaseScore(){
         score++;
         scoreLabel.setValue(score);
@@ -39,6 +43,9 @@ public class MyWorld extends World
         }
     }
     
+    /**
+     * create a new apple 
+     */
     public void createApple(){
         Apple apple = new Apple();
         apple.setSpeed(level);
@@ -47,6 +54,10 @@ public class MyWorld extends World
         addObject(apple, x, y);
     }
     
+    
+    /**
+     * present game over label 
+     */
     public void gameOver(){
         Label gameOverLabel = new Label("Game Over",100);
         addObject(gameOverLabel, 300, 200);
