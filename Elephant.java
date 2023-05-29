@@ -66,6 +66,7 @@ public class Elephant extends Actor
         if (isTouching(Apple.class)){
             removeTouching(Apple.class);
             MyWorld world = (MyWorld) getWorld();
+            world.removeObjects(world.getObjects(BadApple.class));
             world.createApple();
             world.IncreaseScore();
             elephantSound.play();

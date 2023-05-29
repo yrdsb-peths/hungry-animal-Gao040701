@@ -48,10 +48,14 @@ public class MyWorld extends World
      */
     public void createApple(){
         Apple apple = new Apple();
+        BadApple badapple = new BadApple();
         apple.setSpeed(level);
+        badapple.setSpeed(level);
         int x = Greenfoot.getRandomNumber(600);
+        int x1 = Greenfoot.getRandomNumber(600);
         int y = 0;
         addObject(apple, x, y);
+        addObject(badapple, x1, y);
     }
     
     
